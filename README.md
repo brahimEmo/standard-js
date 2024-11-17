@@ -22,6 +22,12 @@ or
 bun install standard-js
 ```
 
+or
+
+```bash
+pnpm add standard-js
+```
+
 ## Usage
 
 ### Importing HTTP Methods
@@ -29,7 +35,7 @@ bun install standard-js
 You can import the HTTP methods and use them in your application:
 
 ```typescript
-import { HTTPMethods } from 'standard-js/http';
+import { HTTPMethods } from "standard-js/http";
 
 console.log(HTTPMethods.Get); // "GET"
 console.log(HTTPMethods.Post); // "POST"
@@ -40,7 +46,7 @@ console.log(HTTPMethods.Post); // "POST"
 You can also import the HTTP status codes:
 
 ```typescript
-import { StatusCodes } from 'standard-js/http';
+import { StatusCodes } from "standard-js/http";
 
 console.log(StatusCodes.StatusOK); // 200
 console.log(StatusCodes.StatusNotFound); // 404
@@ -69,8 +75,8 @@ The following HTTP status codes are available:
   - `StatusSwitchingProtocols` (101)
   - `StatusProcessing` (102)
   - `StatusEarlyHints` (103)
-  
 - **2xx Success**
+
   - `StatusOK` (200)
   - `StatusCreated` (201)
   - `StatusAccepted` (202)
@@ -83,6 +89,7 @@ The following HTTP status codes are available:
   - `StatusIMUsed` (226)
 
 - **3xx Redirection**
+
   - `StatusMultipleChoices` (300)
   - `StatusMovedPermanently` (301)
   - `StatusFound` (302)
@@ -93,6 +100,7 @@ The following HTTP status codes are available:
   - `StatusPermanentRedirect` (308)
 
 - **4xx Client Errors**
+
   - `StatusBadRequest` (400)
   - `StatusUnauthorized` (401)
   - `StatusPaymentRequired` (402)
