@@ -2,12 +2,12 @@
   "name": "standard-js",
   "version": "1.0.0",
   "description": "A JavaScript/TypeScript library that provides type definitions and predefined constants inspired by the Go standard library.",
-  "main": "src/index.js",
-  "types": "types/index.d.ts",
+  "main": "lib/index.js",         
+  "module": "esm/index.js",       
+  "types": "types/index.d.ts",    
   "scripts": {
-    "test": "jest",
-    "build": "babel src -d lib",
-    "start": "node src/index.js"
+    "build": "tsc && tsc -p tsconfig.cjs.json",
+    "test": "jest"
   },
   "keywords": [
     "js",
@@ -23,10 +23,8 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "jest": "^26.6.0",
-    "typescript": "^4.0.0"
+    "typescript": "^4.0.0",
+    "jest": "^26.6.0"
   },
   "repository": {
     "type": "git",
@@ -38,10 +36,10 @@
   "homepage": "https://github.com/brahimEmo/standard-js#readme",
   "files": [
     "lib/",
-    "src/",
+    "esm/",
+    "types/",
     "README.md",
-    "LICENSE",
-    "types/"
+    "LICENSE"
   ],
   "engines": {
     "node": ">=12.0.0"
