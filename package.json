@@ -1,6 +1,6 @@
 {
   "name": "@brahimemo/standard-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript/TypeScript library that provides type definitions and predefined constants inspired by the Go standard library.",
   "main": "lib/index.js",
   "module": "esm/index.js",
