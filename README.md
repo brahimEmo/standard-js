@@ -7,25 +7,25 @@ This module provides common HTTP methods and status codes as TypeScript types an
 To install this module, you can use npm or yarn:
 
 ```bash
-npm install standard-js
+npm install @brahimemo/standard-js
 ```
 
 or
 
 ```bash
-yarn add standard-js
+yarn add @brahimemo/standard-js
 ```
 
 or
 
 ```bash
-bun install standard-js
+bun install @brahimemo/standard-js
 ```
 
 or
 
 ```bash
-pnpm add standard-js
+pnpm add @brahimemo/standard-js
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ pnpm add standard-js
 You can import the HTTP methods and use them in your application:
 
 ```typescript
-import { HTTPMethods } from "standard-js/http";
+import { HTTPMethods } from "@brahimemo/standard-js/http";
 
 console.log(HTTPMethods.Get); // "GET"
 console.log(HTTPMethods.Post); // "POST"
@@ -46,7 +46,7 @@ console.log(HTTPMethods.Post); // "POST"
 You can also import the HTTP status codes:
 
 ```typescript
-import { StatusCodes } from "standard-js/http";
+import { StatusCodes } from "@brahimemo/standard-js/http";
 
 console.log(StatusCodes.StatusOK); // 200
 console.log(StatusCodes.StatusNotFound); // 404
