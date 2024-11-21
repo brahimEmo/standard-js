@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESnext",
     "module": "ESnext",
-    "outDir": "./esm", 
+    "outDir": "./esm",
     "declaration": true,
     "strict": true,
     "esModuleInterop": true,

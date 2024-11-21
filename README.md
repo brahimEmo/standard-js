@@ -1,28 +1,22 @@
-# HTTP Module
+# Standard-JS Package
 
-This module provides common HTTP methods and status codes as TypeScript types and constants. It is designed to simplify the handling of HTTP operations in your applications.
+The `standard-js` package provides common types and constants for HTTP methods, status codes, mathematical constants, and date/time formats. It is designed to simplify development in your applications by offering predefined values that can be easily imported and used.
 
 ## Installation
 
-To install this module, you can use npm or yarn:
+To install this module, you can use npm, Yarn, Bun, or pnpm:
 
 ```bash
 npm install @brahimemo/standard-js
 ```
 
-or
-
 ```bash
 yarn add @brahimemo/standard-js
 ```
 
-or
-
 ```bash
 bun install @brahimemo/standard-js
 ```
-
-or
 
 ```bash
 pnpm add @brahimemo/standard-js
@@ -54,8 +48,6 @@ console.log(StatusCodes.StatusNotFound); // 404
 
 ### Available HTTP Methods
 
-The following HTTP methods are available:
-
 - `GET`
 - `HEAD`
 - `POST`
@@ -68,81 +60,75 @@ The following HTTP methods are available:
 
 ### Available HTTP Status Codes
 
-The following HTTP status codes are available:
-
 - **1xx Informational**
+
   - `StatusContinue` (100)
   - `StatusSwitchingProtocols` (101)
   - `StatusProcessing` (102)
   - `StatusEarlyHints` (103)
+
 - **2xx Success**
 
   - `StatusOK` (200)
   - `StatusCreated` (201)
   - `StatusAccepted` (202)
-  - `StatusNonAuthoritativeInfo` (203)
   - `StatusNoContent` (204)
-  - `StatusResetContent` (205)
-  - `StatusPartialContent` (206)
-  - `StatusMultiStatus` (207)
-  - `StatusAlreadyReported` (208)
-  - `StatusIMUsed` (226)
 
 - **3xx Redirection**
 
-  - `StatusMultipleChoices` (300)
   - `StatusMovedPermanently` (301)
   - `StatusFound` (302)
-  - `StatusSeeOther` (303)
   - `StatusNotModified` (304)
-  - `StatusUseProxy` (305)
-  - `StatusTemporaryRedirect` (307)
-  - `StatusPermanentRedirect` (308)
 
 - **4xx Client Errors**
 
   - `StatusBadRequest` (400)
   - `StatusUnauthorized` (401)
-  - `StatusPaymentRequired` (402)
-  - `StatusForbidden` (403)
   - `StatusNotFound` (404)
-  - `StatusMethodNotAllowed` (405)
-  - `StatusNotAcceptable` (406)
-  - `StatusProxyAuthRequired` (407)
-  - `StatusRequestTimeout` (408)
-  - `StatusConflict` (409)
-  - `StatusGone` (410)
-  - `StatusLengthRequired` (411)
-  - `StatusPreconditionFailed` (412)
-  - `StatusRequestEntityTooLarge` (413)
-  - `StatusRequestURITooLong` (414)
-  - `StatusUnsupportedMediaType` (415)
-  - `StatusRequestedRangeNotSatisfiable` (416)
-  - `StatusExpectationFailed` (417)
-  - `StatusTeapot` (418)
-  - `StatusMisdirectedRequest` (421)
-  - `StatusUnprocessableEntity` (422)
-  - `StatusLocked` (423)
-  - `StatusFailedDependency` (424)
-  - `StatusTooEarly` (425)
-  - `StatusUpgradeRequired` (426)
-  - `StatusPreconditionRequired` (428)
-  - `StatusTooManyRequests` (429)
-  - `StatusRequestHeaderFieldsTooLarge` (431)
-  - `StatusUnavailableForLegalReasons` (451)
 
 - **5xx Server Errors**
   - `StatusInternalServerError` (500)
   - `StatusNotImplemented` (501)
-  - `StatusBadGateway` (502)
-  - `StatusServiceUnavailable` (503)
-  - `StatusGatewayTimeout` (504)
-  - `StatusHTTPVersionNotSupported` (505)
-  - `StatusVariantAlsoNegotiates` (506)
-  - `StatusInsufficientStorage` (507)
-  - `StatusLoopDetected` (508)
-  - `StatusNotExtended` (510)
-  - `StatusNetworkAuthenticationRequired` (511)
+
+### Importing Mathematical Constants
+
+You can import mathematical constants like this:
+
+```typescript
+import { Math } from "@brahimemo/standard-js/math";
+
+console.log(Math.Pi); // 3.141592653589793
+console.log(Math.Expo); // 2.718281828459045
+```
+
+### Available Mathematical Constants
+
+- `Math.Expo`
+- `Math.Pi`
+- `Math.Phi`
+- `Math.Sqrt2`
+- `Math.SlfE`
+- `Math.Ln2`
+- And more...
+
+### Importing Date/Time Formats
+
+You can import date and time formats as follows:
+
+```typescript
+import { Formats } from "@brahimemo/standard-js/time";
+
+console.log(Formats.RFC3339); // "yyyy-MM-ddTHH:mm:ssZ"
+console.log(Formats.Kitchen); // "h:mma"
+```
+
+### Available Date/Time Formats
+
+- `Formats.Layout`
+- `Formats.ANSIC`
+- `Formats.RFC3339`
+- `Formats.Kitchen`
+- And more...
 
 ## Contributing
 

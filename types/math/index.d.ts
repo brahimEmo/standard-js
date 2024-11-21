@@ -1,0 +1,24 @@
+export declare const Expo = 2.718281828459045;
+export declare const Pi = 3.141592653589793;
+export declare const Phi = 1.618033988749895;
+export declare const Sqrt2 = 1.4142135623730951;
+export declare const SqrtE = 1.6487212707001282;
+export declare const SqrtPi = 1.772453850905516;
+export declare const SqrtPhi = 1.272019649514069;
+export declare const Ln2 = 0.6931471805599453;
+export declare const Log2E: number;
+export declare const Ln10 = 2.302585092994046;
+export declare const Log10E: number;
+export declare const Math: {
+    Expo: number;
+    Pi: number;
+    Phi: number;
+    Sqrt2: number;
+    SqrtE: number;
+    SqrtPi: number;
+    SqrtPhi: number;
+    Ln2: number;
+    Log2E: number;
+    Ln10: number;
+    Log10E: number;
+};
